@@ -7,9 +7,13 @@
  * print_alphabet - Prints the whole alphabet
  */
 
-int main(void)
+void print_alphabet(void);
 {
-	print_alphabet();
+	char i;
+
+	for (i = 'a'; i <= 'z'; i++)
+		_putchar(i);
+		_putchar('\n');
 	return (0);
 }
 
