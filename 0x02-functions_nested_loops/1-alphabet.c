@@ -7,7 +7,7 @@
  * print_alphabet - Prints the whole alphabet
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char i;
 
