@@ -20,7 +20,7 @@ int main(void)
 	len = strlen(str);
 
 	for (i = 0; i <= len; i++)
-		_putchar("%c", str[i]);
+		_putchar(str[i]);
 	return (0);
 }
 
