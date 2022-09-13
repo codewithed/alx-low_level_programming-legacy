@@ -18,6 +18,6 @@ int print_last_digit(int n)
 	least = last + 48;
 
 	_putchar(least);
-	return (n % 10);
+	return (last);
 }
 
