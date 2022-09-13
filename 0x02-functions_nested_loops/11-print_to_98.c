@@ -6,7 +6,6 @@
  * print_to_98 - print natural numbers from n to 98
  * @n: an int
  *
- * Return: 0 if successful
  */
 
 void print_to_98(int n)
@@ -38,6 +37,5 @@ void print_to_98(int n)
 			}
 		}
 	}
-	return (0);
 }
 
