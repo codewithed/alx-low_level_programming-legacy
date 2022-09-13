@@ -1,7 +1,7 @@
 #include "main.h"
 #include <string.h>
 
-/*
+/**
  * main - Program excution starts here
  *
  * Return: Return 0 if successful, 1 if not
@@ -17,10 +17,12 @@ int main(void)
 {
 	char str[] = "_putchar";
 	int i, len;
+
 	len = strlen(str);
 
 	for (i = 0; i <= len; i++)
 		_putchar(str[i]);
+		_putchar('\n');
 	return (0);
 }
 
