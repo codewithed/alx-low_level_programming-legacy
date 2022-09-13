@@ -19,3 +19,5 @@ void print_alphabet_x10(void);
 
 #endif /* _MAIN_H_ */
 
+int _islower(int c);
+int _isalpha(int c);
