@@ -10,18 +10,18 @@
 
 int largest_number(int a, int b, int c)
 {
-	int largest, n;
-	int arr[2];
+	int n;
+	int arr[3];
 
 	arr[0] = a;
 	arr[1] = b;
 	arr[2] = c;
-
-	for (n = 0; n < 3; ++n)
+	for (n = 0; n < 3; n++)
 	{
 		if (arr[0] < arr[n])
-			 arr[0] = arr[n];
+			arr[0] = arr[n];
 	}
+
 	return (arr[0]);
 }
 
