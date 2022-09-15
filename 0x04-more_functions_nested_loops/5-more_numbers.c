@@ -12,7 +12,7 @@ void more_numbers(void)
 
 	len = strlen(str);
 
-	for (i = 0; i < 14; i++)
+	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < len; j++)
 		{
