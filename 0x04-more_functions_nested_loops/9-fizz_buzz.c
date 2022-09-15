@@ -18,22 +18,30 @@ int main(void)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("%s ", fb);
+			printf("%s", fb);
+			putchar(' ');
 			continue;
 		}
 		else if (i % 3 == 0)
 		{
-			printf("%s ", f);
+			printf("%s", f);
+			putchar(' ');
 			continue;
 		}
 		else if (i % 5 == 0)
 		{
-			printf("%s ", b);
+			if (i == 100)
+			{
+				printf("%s", b);
+			}
+			printf("%s", b);
+			putchar(' ');
 			continue;
 		}
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+			putchar(' ');
 		}
 	}
 	putchar('\n');
