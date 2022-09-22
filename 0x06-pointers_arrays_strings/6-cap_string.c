@@ -25,26 +25,16 @@ char *cap_string(char *str)
 				str[i + 1] -= 32;
 				continue;
 			}
-/*
-*		else if (str[i] >= 59 && str[i] <= 63)
- *		{
- *			if (str[i + 1] >= 97 && str[i + 1] <= 122)
- *			{
- *				str[i + 1] -= 32;
- *				i++;
- *				continue;
- *			}
- *		}
- *
- *		else if (str[i + 1] == 123 || str[i + 1] == 125)
- *		{
- *			if (str[i + 1] >= 97 && str[i + 1] <= 122)
- *			{
- *				str[i + 1] -= 32;
- *				i++;
- *				continue;
- *			}
- */
+		}
+
+		else if (str[i] == '"' || str[i] == '.')
+		{
+			if (str[i + 1] >= 97 && str[i + 1] <= 122)
+			{
+				str[i + 1] -= 32;
+				continue;
+			}
+
 		}
 	}
 	return (str);
