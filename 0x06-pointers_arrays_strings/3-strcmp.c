@@ -12,7 +12,7 @@
 int _strcmp(char *s1, char *s2)
 {
 	int res = 0;
-	int i = 0;
+	int i;
 	int s1_len = strlen(s1);
 	int s2_len = strlen(s2);
 	int longest;
@@ -24,21 +24,20 @@ int _strcmp(char *s1, char *s2)
 
 
 
-	while (i < longest)
+	for (i = 0; i < longest; i++)
 	{
 		if (s1[i] == s2[i])
-			{
-				i++;
-				continue;
-			}
+		{
+			i++;
+			continue;
+		}
 		else if (s1[i] != s2[i])
-			{
-				res = s1[i] - s2[i];
-				break;
-			}
+		{
+			res = s1[i] - s2[i];
+			break;
+		}
 	}
 
 	return (res);
 }
-
 
