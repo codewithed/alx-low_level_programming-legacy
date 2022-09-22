@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
  * *_strncpy - copies a src string to a destination string
@@ -15,16 +16,18 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 	int src_len;
 
-	src_len = sizeof(*src);
+	src_len = strlen(src);
 
-	for (i = 0; i < n; i++)
+	if (n > 0)
 	{
-		if (i < src_len)
-			dest[i] = src[i];
-		else
-			dest[i] = '\0';
+		for (i = 0; i < n; i++)
+		{
+			if (i >= src_len)
+				dest[i] = '\0';
+			else
+				dest[i] = src[i];
+		}
 	}
-
 	return (dest);
 }
 
