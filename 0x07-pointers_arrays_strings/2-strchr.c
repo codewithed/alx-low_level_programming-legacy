@@ -16,17 +16,12 @@ char *_strchr(char *s, char c)
 	unsigned int len = strlen(s);
 
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		if (*(s + i) == c)
 		{
 			ptr = &*(s + i);
 			return (ptr);
-		}
-
-		else if (*(s + i) == '\0')
-		{
-			return (NULL);
 		}
 	}
 	return (NULL);
