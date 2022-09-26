@@ -12,8 +12,8 @@
 char *_strchr(char *s, char c)
 {
 	char *ptr;
-	int i;
-	int len = strlen(s);
+	unsigned int i;
+	unsigned int len = strlen(s);
 
 
 	for (i = 0; i < len; i++)
