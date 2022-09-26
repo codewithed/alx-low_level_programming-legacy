@@ -22,6 +22,7 @@ unsigned int _strspn(char *s, char *accept)
 	for (i = 0; i < s_len; i++)
 	{
 		bool found_match = false;
+
 		for (j = 0; j < accept_len; j++)
 		{
 			if (*(accept + j) == *(s + i))
@@ -31,8 +32,13 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 
-		if (!found_match) break;
-		else count++;
+		if (!found_match)
+		{
+			break;
+		}
+
+		else
+			count++;
 	}
 
 	return (count);
