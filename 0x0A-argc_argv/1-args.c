@@ -9,8 +9,17 @@
 
 int main(int argc, __attribute__ ((unused)) char *argv[])
 {
-	printf("%d", argc);
+	int i, count;
+
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+			count = i;
+	}
+
+	printf("%d", count);
 	putchar('\n');
+
 	return (0);
 }
 
