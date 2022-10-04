@@ -6,6 +6,7 @@
  * create_array - create an array given a size
  * @size: size of array to be created
  * @c: the car to be initialized
+ * Return: pointer to arr;
  */
 
 char *create_array(unsigned int size, char c)
