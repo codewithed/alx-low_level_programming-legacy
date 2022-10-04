@@ -21,15 +21,11 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i <= s1_len; i++)
 	{
-		if (s1 == NULL)
-			*res = "";
 		res[i] = s1[i];
 	}
 
 	for (j = 0; j <= s2_len; j++)
 	{
-		if (s2 == NULL)
-			*res = "";
 		res[i + 1] = s2[j];
 		i++;
 	}
