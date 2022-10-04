@@ -1,6 +1,7 @@
-#include "main.c"
+#include "main.h"
 #include <string.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * _strdup - duplicates a string
