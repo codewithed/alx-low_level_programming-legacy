@@ -25,6 +25,7 @@ char *_strdup(char *str)
 	}
 	else
 		return (NULL);
+	res[i] = '\0';
 	return (res);
 }
 
