@@ -15,3 +15,4 @@ void free_grid(int **grid, int height)
 	for (a = 0; a < height; a++)
 		free(grid[a]);
 	free(grid);
+}
