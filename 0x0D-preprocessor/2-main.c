@@ -1,6 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * main - program execution starts here
+ * Return: 0 if successful
+ */
+
 int main(void)
 {
 	int i;
